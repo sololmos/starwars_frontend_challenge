@@ -1,14 +1,16 @@
 import logo from './logo.png';
 import './App.css';
+import Home from './components/home/Home';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/* <p>
          Star Wars Battle App
-        </p>
+        </p> */}
+        <Home></Home>
       </header>
     </div>
   );
