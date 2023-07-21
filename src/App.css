@@ -11,7 +11,8 @@ body {
 }
 
 .App-logo {
-  height: 40vmin;
+  margin-top: -20px;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -39,3 +40,4 @@ body {
     transform: perspective(500px) scale(1.2);
   }
 }
+

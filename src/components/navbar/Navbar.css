@@ -1,0 +1,12 @@
+.navbar{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+button{
+    margin: 5px;
+}

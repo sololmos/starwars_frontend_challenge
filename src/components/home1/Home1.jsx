@@ -1,25 +1,25 @@
 import React from "react";
-import "./Home.css";
+import "./Home1.css";
 import Navbar from "../navbar/Navbar";
-import Cards from "../cards/Cards";
+import Cards1 from "../cards1/Cards1";
 import List from "../list/List";
 
-const Home = () => {
+const Home1 = () => {
    
     return (
-        <div className="home" >
+        <div className="home1" >
         <Navbar></Navbar>
-        <Cards></Cards>
-        
+        <Cards1></Cards1>
+        <div className="list">
         <List></List>
-        
+        </div>
         
        
         </div>
     );
 };
 
-export default Home;
+export default Home1;
 
 // const Home = () => {
    

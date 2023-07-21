@@ -1,6 +1,4 @@
-.cards{
-    margin-top: 50px;
-}
+
 .form {
     position: relative;
     display: block;
@@ -20,7 +18,30 @@
   }
   
 
+  .card-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+   
 
+  }
+
+  .card-left,
+.card-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.card-left {
+  margin-right: 90px;
+  /* Estilos para el componente Card de la izquierda */
+}
+
+.card-right {
+  margin-left: 90px;
+  /* Estilos para el componente Card de la derecha */
+}
   
   /*--------header section-----------*/
   

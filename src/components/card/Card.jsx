@@ -6,12 +6,14 @@ import "./Card.css";
 const Card = ({photo, heading, detail}) => {
    
     return (
-        <div className="card" >
-            <img src={photo} style={{width : '50px', height : '50px'}} alt= "" />
-            <span>{heading}</span>
-            <span>{detail}</span>
-
-
+        <div  className="container">
+            <div className="input-container">
+                <div className="input-content">
+                    <div className="input-dist">
+                    <div className="text">hola aca hay un texto</div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
