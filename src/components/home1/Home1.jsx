@@ -16,7 +16,7 @@ const Home1 = ({getAllCharacters}) => {
     const[listC, setListC]=useState([]);
 
     const search=function(name,cardLocation){
-        const findCharacter= getAllCharacters.find((c)=>c.name ===name);
+        const findCharacter= getAllCharacters.find((c)=>c.name === name);
         if(cardLocation === "left"){
             SetChars({...chars, cardLeft:findCharacter});
         };
@@ -26,9 +26,26 @@ const Home1 = ({getAllCharacters}) => {
 
     };
     const addList=function(){
+        if(listC.length === 0){
+            setListC(getAllCharacters);
+
+        } else{
+            setListC([]);
+        }
 
     };
-    const random=function(){
+    const random=function(cardLocation){
+        function getNumRandom(max){
+            return Math.floor(Math.random()*max)
+        };
+        const idRandom= getNumRandom(87) + 1;
+        const findCharacter= getAllCharacters.find((c)=>c.id === idRandom);
+        if(cardLocation === "left"){
+            SetChars({...chars, cardLeft:findCharacter});
+        };
+        if(cardLocation === "right"){
+            SetChars({...chars, cardRight:findCharacter});
+        };
 
     };
 

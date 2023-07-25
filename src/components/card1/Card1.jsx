@@ -4,7 +4,8 @@ import './Card1.css';
 
 import Button from '../button/Button';
 
-const Card1 = ({ image, title, description, styles, button, color, onClick, text }) => {
+const Card1 = ({character,  height, gender, species,
+                 image, id, homeworld, name, description, styles, button, color, onClick, text }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleToggleFlip = () => {
@@ -19,13 +20,21 @@ const Card1 = ({ image, title, description, styles, button, color, onClick, text
       onMouseLeave={handleToggleFlip}
     >
       <div className="card-inner">
+
         <div className="card-front">
-          <img className="card-image" src={image} alt={title} />
-          <h2 className="card-title">{title}</h2>
+          <img className="card-image" src={character ? character.image : ""} alt={name} />
+          <h2 className="card-title">Name: {character ? character.name : ""}</h2>
+          <h4>id: {character ? character.id : ""}</h4>
           {button && <Button text={text} onClick={onClick} color={color} />}
         </div>
+
         <div className="card-back">
-          <p className="card-description">{description}</p>
+         
+        
+          <p className="card-description">Planet: {character ? character.homeworld : ""}</p>
+          <p className="card-description">height: {character ? character.height : ""}</p>
+          <p className="card-description">gender: {character ? character.gender : ""}</p>
+          <p className="card-description">species: {character ? character.species : ""}</p>
         </div>
       </div>
     </div>
@@ -34,8 +43,8 @@ const Card1 = ({ image, title, description, styles, button, color, onClick, text
 
 Card1.propTypes = {
   image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  homeworld: PropTypes.string.isRequired,
   styles: PropTypes.object,
   button: PropTypes.bool,
 };

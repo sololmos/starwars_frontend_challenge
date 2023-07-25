@@ -13,15 +13,15 @@ const Navbar = ({search, random, addList}) => {
             
            
                 <Search search={search} cardLocation="left"></Search>
-                <Random></Random>
+                <Random random={random} cardLocation="left"></Random>
             
                 {/* <Button text="Haz clic" color="#ff0000" size="large" onClick={handleClick} /> */}
-                <Button text="All characters" />
+                <Button onClick={addList} text="All characters" />
            
 
             
                 <Search search={search} cardLocation="right"></Search>
-                <Random></Random>
+                <Random random={random}  cardLocation="right"></Random>
             
 
             

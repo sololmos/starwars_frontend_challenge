@@ -3,12 +3,14 @@ import "./Random.css";
 import Button from "../button/Button";
 
 
-const Random = () => {
+const Random = ({random, cardLocation}) => {
     return (
    
 
         <div className="Random">
-             <Button text="Random" color="rgb(158, 48, 169,0.4)" 
+             <Button 
+             onClick={()=>random(cardLocation)}
+              text="Random" color="rgb(158, 48, 169,0.4)" 
              
               />
         </div>
