@@ -5,14 +5,14 @@ import Random from "../random/Random";
 import Button from "../button/Button";
 
 
-const Navbar = () => {
+const Navbar = ({search, random, addList}) => {
     return (
    
 
         <div className="navbar">
             
            
-                <Search></Search>
+                <Search search={search} cardLocation="left"></Search>
                 <Random></Random>
             
                 {/* <Button text="Haz clic" color="#ff0000" size="large" onClick={handleClick} /> */}
@@ -20,7 +20,7 @@ const Navbar = () => {
            
 
             
-                <Search></Search>
+                <Search search={search} cardLocation="right"></Search>
                 <Random></Random>
             
 
