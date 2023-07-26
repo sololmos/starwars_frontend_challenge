@@ -2,6 +2,9 @@
 
 ## Star Wars Battle App
 
+### Deployed 
+https://starwars-frontend.vercel.app/
+
 
 
 Bienvenido a su desafío técnico!
