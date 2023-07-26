@@ -1,4 +1,109 @@
 
+.flip-card {
+  display: flex;
+  margin: 30px;
+  padding: 20px;
+  background-color: transparent;
+  width: 245px;
+  height: 270px;
+  perspective: 1000px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.flip-card-inner {
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 2em;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  background-color: transparent;
+  border: 2px solid #c143da;
+
+}
+
+
+.profile-image {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  margin-top: 15px;
+  border-radius: 5em;
+  width: 150px;
+  height: 150px;
+  margin-left: 25px;
+  object-fit: cover;
+}
+
+
+.pfp {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 27em;
+  fill: #c143da;
+}
+
+
+.name {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 25px;
+  font-size: 20px;
+  color: #c143da;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+
+.flip-card-back {
+  background-color: #240d29;
+  border: 4px solid #c143da;
+  transform: rotateY(180deg);
+  padding: 11px;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+/* 
 .card {
   width: 300px;
   padding: 16px;
@@ -10,14 +115,13 @@
 }
 
 .card-image {
-  width: 100%;
-  height: 200px;
+  width: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .card-title {
-  color: #555;
+  color: #ffffff;
   margin-top: 8px;
   font-size: 18px;
   font-weight: bold;
@@ -27,10 +131,10 @@
   margin-top: 8px;
   font-size: 14px;
   color: #555;
-}
+} */
 
 
-/* 
+/* --------------------------------------------------------------------------------------
 .card {
   width: 300px;
   padding: 16px;

@@ -1,0 +1,10 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar horizontalmente las columnas */
+  }
+  
+  .list h5 {
+    width: 25%;
+    padding: 8px;
+  }
